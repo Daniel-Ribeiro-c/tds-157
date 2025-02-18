@@ -20,3 +20,6 @@ function somarComParametro(n1, n2, n3){
 
 console.log(somarComParametro(primeiro, segundo, terceiro))
 
+const teste = () => "Texto qualquer arrow function"
+
+console.log(teste())
