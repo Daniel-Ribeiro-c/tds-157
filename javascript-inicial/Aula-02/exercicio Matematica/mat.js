@@ -24,7 +24,7 @@ function multiplicacao(){
 }
 
 function divisao(){
-    document.getElementById("n8").style.border = "1px solid black"
+    // document.getElementById("n8").style.border = "1px solid black"
     var numero1 = parseFloat(document.getElementById("n7").value)
     var numero2 = parseFloat(document.getElementById("n8").value)
     var res = document.getElementById("result")
