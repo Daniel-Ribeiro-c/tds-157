@@ -63,49 +63,68 @@ function media(){
 function calcular(){
     var numero1 = parseFloat(document.getElementById("n9").value)
     var numero2 = parseFloat(document.getElementById("n10").value)
-    var resulta = document.getElementById("resIMC")
-    var Resultado = numero2 / (numero1 * numero1)
-    var msgt = document.getElementById("msgt")
-    if(Resultado>= 40.0){
-        resulta.textContent = Resultado.toFixed(1)
-        msgt.textContent = "OBESIDADE GRAU 3"
-        msgt.style.color = "red"
-    }else if(Resultado<=39.9 && Resultado>=35.0){
-        resulta.textContent = Resultado.toFixed(1)
-        msgt.textContent = "OBESIDADE GRAU 2"
-        msgt.style.color = "red"
-    }else if(Resultado<=34.9 && Resultado>=30.0){
-        resulta.textContent = Resultado.toFixed(1)
-        msgt.textContent = "OBESIDADE GRAU 1"
-        msgt.style.color = "orange"
-    }else if(Resultado<=29.9 && Resultado>= 25.0){
-        resulta.textContent = Resultado.toFixed(1)
-        msgt.textContent = "SOBREPESO"
-        msgt.style.color = "orange"
-    }else if(Resultado<=24.9 && Resultado>= 18.6){
-        resulta.textContent = Resultado.toFixed(1)
-        msgt.textContent = "NORMAL"
-        msgt.style.color = "green"
-    }else if(Resultado <= 18.5){
-        resulta.textContent = Resultado.toFixed(1)
-        msgt.textContent = "ABAIXO DO NORMAL"
-        msgt.style.color = "blue"
+    var resultado = document.getElementById("resIMC")
+    var mensagem = document.getElementById("msgt")
+    var IMC = numero2 / (numero1 * numero1)
+   
+    
+    if(isNaN(numero1) || isNaN(numero2)){
+        resultado.textContent= "Digite apenas números"
+        resultado.style.color = "red"
+        document.getElementById("mensagem").textContent = " "
+        return
+    }
+    resultado.textContent = IMC.toFixed(2)
+    if(IMC>= 40.0){
+       mensagem.textContent = "OBESIDADE GRAU 3"
+       mensagem.style.color = "red"
+    }else if(IMC<=39.9 && IMC>=35.0){
+       mensagem.textContent = "OBESIDADE GRAU 2"
+       mensagem.style.color = "red"
+    }else if(IMC<=34.9 && IMC>=30.0){
+       mensagem.textContent = "OBESIDADE GRAU 1"
+       mensagem.style.color = "orange"
+    }else if(IMC<=29.9 && IMC>= 25.0){
+       mensagem.textContent = "SOBREPESO"
+       mensagem.style.color = "orange"
+    }else if(IMC<=24.9 && IMC>= 18.6){
+       mensagem.textContent = "NORMAL"
+       mensagem.style.color = "green"
+    }else if(IMC <= 18.5){
+       mensagem.textContent = "ABAIXO DO NORMAL"
+       mensagem.style.color = "blue"
     }
     
 }
 function balada(){
-    var numero1 = parseFloat(document.getElementById("n11").value)
+    var nascimento = parseFloat(document.getElementById("n11").value)
     var resulta = document.getElementById("resBalada")
-    var resultado = 2025 - numero1
     var msgtd = document.getElementById("msgtd")
-    if(resultado < 18){
-        resulta.textContent = resultado
+    
+    if(isNaN(nascimento)){
+        resulta.textContent= "Digite apenas números"
+        resulta.style.color = "red"
+        document.getElementById("msgt").textContent = " "
+        return
+    }
+    const thisYear = new Date().getFullYear();
+    const validacao = thisYear - nascimento
+    
+    resulta.textContent = validacao;
+        console.log(resulta)
+
+    if(nascimento > thisYear){
+        msgtd.textContent = "Sai daqui anti-cristo, nem nasceu e ja ta na gandaia"
+        msgtd.style.color = "red"
+    }else{
+    if(validacao < 18){
+        resulta.textContent = validacao
         msgtd.textContent = "NÃO PODE ENTRAR XARÁ"
         msgtd.style.color = "red"
     }else{
-        resulta.textContent = resultado
+        resulta.textContent = validacao
         msgtd.textContent = "Pode entrar lindão"
         msgtd.style.color = "green"
     }
-
+    }
 }
