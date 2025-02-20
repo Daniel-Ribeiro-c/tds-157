@@ -111,7 +111,6 @@ function balada(){
     const validacao = thisYear - nascimento
     
     resulta.textContent = validacao;
-        console.log(resulta)
 
     if(nascimento > thisYear){
         msgtd.textContent = "Sai daqui anti-cristo, nem nasceu e ja ta na gandaia"
