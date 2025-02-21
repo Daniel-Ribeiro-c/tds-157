@@ -32,6 +32,7 @@
         </div>
       </nav>
       <main>
+       
         <section id="s1">
             <div class="s1-left">
                 <div class="wrap-img">
@@ -45,6 +46,7 @@
                    sonoras e identidade própria. Sua morte em 2003 não apagou seu legado, que segue influente no rap nacional.</p>
             </div>
         </section>
+       
         <section id="s2">
            <div class="cartao1">
             <div class="wrap-img-card">
@@ -94,12 +96,80 @@
             </div>
            </div>
         </section>
+        
         <section id="s3">
-            nova sessao
+          <div class="wrap-acc">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Projeto #1
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Codigo feito por mim, usando as tecnologias HTML, CSS e JavaScript <br> <a target="_blank" href="https://github.com/Daniel-Ribeiro-c/tds-157/tree/main/javascript-inicial/Aula-01 ">Acessar projeto no github</a></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Projeto #2
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Codigo feito por mim, usando as tecnologias HTML, CSS e JavaScript <br> <a target="_blank" href="https://github.com/Daniel-Ribeiro-c/tds-157/tree/main/javascript-inicial/Aula-02 ">Acessar projeto no github</a></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Projeto #3
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Codigo feito por mim, usando as tecnologias HTML, CSS e JavaScript <br> <a target="_blank" href="https://github.com/Daniel-Ribeiro-c/tds-157/tree/main/javascript-inicial/Aula-03 ">Acessar projeto no github</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
         </section>
+       
         <section id="s4">
-            nova sessao
+          <h2 class = "fonte">Contato</h2>
+          <div class="formulario">
+              <label for="nome">Nome</label>
+              <input type="text" placeholder="Digite seu nome" id="nome">
+              <label for="assunto">Assunto</label>
+              <input type="text" placeholder="Digite o assunto" id="assunto">
+              <br>
+              <button onclick="enviar()">Enviar</button>
+          </div>
         </section>
+          <footer>
+            <a target="_blank" href="https://www.instagram.com/"><img width="30px" height="auto" src="./assets/instagram1.png" alt="Instagram"></a>
+            <a target="_blank" href="https://www.facebook.com/login"><img width="30px" height="auto" src="./assets/facebook.webp" alt="Facebook"></a>
+            <a target="_blank" href="https://x.com/"><img width="30px" height="auto" src="./assets/x.webp" alt="X"></a>
+            <a target="_blank" href="https://br.linkedin.com/"><img width="30px" height="auto" src="./assets/whatsapp.png" alt="Linkedin"></a>
+        </footer>
       </main>
+      <script>
+        function enviar(){
+            document.getElementById("nome").style.border = "1px solid black"
+                document.getElementById("assunto").style.border = "1px solid black"
+            const nome = document.getElementById("nome").value
+            const assunto = document.getElementById("assunto").value
+           
+            if(!nome || !assunto){
+                document.getElementById("nome").style.border = "2px solid red"
+                document.getElementById("assunto").style.border = "2px solid red"
+                return
+            }
+
+            const mensagem = `Gostaria de entrar em contato!!! \n\nNome: ${nome} \nAssunto: ${assunto}`
+            const msg = encodeURIComponent(mensagem)
+            window.open `https://wa.me/5541998622669?text=${msg}`, `_blank`
+        }
+    </script>
 </body>
 </html>
