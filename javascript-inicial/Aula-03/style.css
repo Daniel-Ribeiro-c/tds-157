@@ -15,7 +15,7 @@ section{
 
 
 #s1{
-    background-image: url("./assets/logo.jpg");
+    background-image: url("./assets/cinza.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -61,6 +61,120 @@ section{
     font-style: normal;
 }
 
+#s2{
+    background-image: url("./assets/cinza.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cartao1{
+    background-color: #020202a9;
+    width: 16rem;
+    height:450px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+
+}
+.cartao1:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.cartao2{
+    background-color: #020202a9;
+    width: 16rem;
+    height:450px;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+.cartao2:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+.cartao3{
+    background-color: #020202a9;
+    width: 16rem;
+    height:450px;
+    border: 2px solid rgb(0, 144, 192);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+.cartao3:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+.cartao4{
+    background-color: #020202a9;
+    width: 16rem;
+    height:450px;
+    border: 2px solid #2f2f2f;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+.cartao4:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+.wrap-img-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    max-height: 100px;
+
+}
+
+.wrap-info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.wrap-info-card h3{
+  max-height:50px ;
+  min-height: 50px;
+}
+
+
 
 @media (width < 1000px){
     #s1{
@@ -72,5 +186,8 @@ section{
     .img-s1{
         width: 300px;
         height: 300px;
+    }
+    #s2{
+        height: auto;
     }
 }
