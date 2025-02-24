@@ -17,33 +17,41 @@ body{
 }
 
 h1{
+    align-items: center;
     width: 100%;
     text-align: center;
-}
-
-main{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1vh;
 }
 
-div{
+
+
+section{
+    
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 50px;
+    width: 300px;
+    height: 400px;
+}
+
+input{
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+    gap: 20px;
+}
+label{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    border: 2px solid black;
-    padding: 10px;
-    gap: 15px;
-    width: 300px;
-    height: auto;
+    justify-content: row;
+    align-items: column;
+    gap: 20px;
 }
 
 button{
+    width: 180px;
+    height: auto;
     padding: 8px;
     border-radius: 5px;
+    gap: 20px;
 }
