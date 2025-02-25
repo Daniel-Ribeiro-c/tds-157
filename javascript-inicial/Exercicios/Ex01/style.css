@@ -13,17 +13,9 @@ body{
     flex-direction: column;
     justify-content: flex-start; /* Alinha elementos ao topo */
     align-items: center; /* Centraliza na horizontal */
-    gap: 4vh; /* Espaçamento vertical entre elementos */
-    padding: 20px 40px; /* Preenchimento interno */
-    margin-top: 20vh; /* Distância do topo da tela */
+    margin-top: 30vh; /* Distância do topo da tela */
 }
 
-/* Estilo do título */
-h2{
-    text-align: center; /* Centraliza o texto */
-}
-
-/* Estilo da seção do formulário */
 section{
     border-radius: 10px; /* Bordas arredondadas */
     width: 320px; /* Largura fixa */
@@ -41,7 +33,6 @@ section{
 label {
     width: 100%; /* Faz o label ocupar toda a largura do container */
     display: block; /* Faz o label se comportar como bloco para alinhar com o input */
-
 }
 
 /* Estilo dos campos de entrada (input) */
@@ -61,4 +52,4 @@ button{
     border: none; /* Remove a borda padrão */
     font-weight: bold; /* Deixa o texto em negrito */
     cursor: pointer; /* Muda o cursor para indicar clique */
-}
+}/* Resetando estilos padrão do navegador */
