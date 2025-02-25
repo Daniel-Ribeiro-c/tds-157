@@ -1,57 +1,64 @@
+/* Resetando estilos padrão do navegador */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Estilo geral do corpo da página */
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    min-height: 100vh;
-    height: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fonte elegante */
+    min-height: 100vh; /* Garante altura mínima de toda a tela */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4vh;
-    padding: 20px 40px;
+    justify-content: flex-start; /* Alinha elementos ao topo */
+    align-items: center; /* Centraliza na horizontal */
+    gap: 4vh; /* Espaçamento vertical entre elementos */
+    padding: 20px 40px; /* Preenchimento interno */
+    margin-top: 20vh; /* Distância do topo da tela */
 }
 
-h1{
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
+/* Estilo do título */
+h2{
+    text-align: center; /* Centraliza o texto */
 }
 
-
-
+/* Estilo da seção do formulário */
 section{
-    
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 50px;
-    width: 300px;
-    height: 400px;
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 320px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    border: 2px solid black; /* Borda preta */
+    display: flex; /* Ativa o flexbox */
+    padding: 50px; /* Preenchimento interno */
+    flex-direction: column; /* Organiza os itens na vertical */
+    align-items: flex-start; /* Alinha itens à esquerda */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    gap: 15px; /* Espaçamento uniforme entre itens */
 }
 
+/* Estilo dos labels (Nome, Senha) */
+label {
+    width: 100%; /* Faz o label ocupar toda a largura do container */
+    display: block; /* Faz o label se comportar como bloco para alinhar com o input */
+
+}
+
+/* Estilo dos campos de entrada (input) */
 input{
-    padding: 8px;
-    border-radius: 8px;
-    border: 2px solid black;
-    gap: 20px;
-}
-label{
-    display: flex;
-    flex-direction: column;
-    justify-content: row;
-    align-items: column;
-    gap: 20px;
+    width: 100%; /* Faz o input ocupar toda a largura disponível */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: 2px solid black; /* Borda preta */
 }
 
+/* Estilo do botão de login */
 button{
-    width: 180px;
-    height: auto;
-    padding: 8px;
-    border-radius: 5px;
-    gap: 20px;
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: lightgray; /* Cor de fundo */
+    border: none; /* Remove a borda padrão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer; /* Muda o cursor para indicar clique */
 }

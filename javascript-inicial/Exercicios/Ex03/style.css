@@ -1,24 +1,58 @@
-body{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
     min-height: 100vh;
     height: auto;
+    gap: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-    section{
-        background-color: #020202a9;
-        width: 16rem;
-        height:450px;
-        border: 2px solid yellow;
-        border-radius: 10px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: all 150ms ease-in-out;
-    
-    }
-  
+section {
+    text-align: center;
+    background-color: #ffffff;
+    width: 280px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+     transition: all 150ms ease-in-out;
+}
+
+section:hover{
+    background-color: darkblue;
+    color: white;
+ 
+}
+.wrap-img-card{
+    position: relative;
+    background-color: white; /* Cor de fundo da caixa */
+    padding: 10px; /* Espaço entre a imagem e a borda */
+    border: 5px solid rgb(255, 255, 255); /* Borda da caixa */
+    border-radius: 10px; /* Bordas arredondadas */    
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+
+button {
+    color: white;
+    width: 70%; 
+    height: 50px;
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 50px; /* Bordas arredondadas */
+    background-color: rgb(25, 198, 255); /* Cor de fundo */
+    border: none; /* Remove a borda padrão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer; /* Muda o cursor para indicar clique */
+}
