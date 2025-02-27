@@ -14,10 +14,13 @@
 
 body {
     background-color: #333333;
+    min-height: 100vh;
+    height: auto;
 }
 
-section {
-    height: 100vh;
+section {  
+   min-height: 100vh;
+   height: auto;
     padding-top: 2vh;
     flex-wrap: wrap;
 }
@@ -25,22 +28,25 @@ section {
 
 #s1 {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 2vw;
+    gap: 10px;
 }
 
 .texto1 {
     text-align: center;
     color: #FFFFFF;
     font-family: "Times New Roman", 'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: x-large;
+    width: 80%;
 }
 
 .title-name {
+    margin-top: 10px;
     flex-wrap: wrap;
+    margin-top: 60px;
     color: white;
     font-family: "Times New Roman", 'Times New Roman', Times, serif;
 }
@@ -51,7 +57,7 @@ section {
     align-items: center;
     flex-direction: column;
     width: 400px;
-
+    
 }
 
 .s1-low {
@@ -68,19 +74,6 @@ section {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* .{
-    background-image: url(./assets/paisagem.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 60vh;
-    padding: 100;
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    align-items: center;
-} */
 .img-s1 {
     width: 600px;
     height: auto;
@@ -118,12 +111,13 @@ section {
     border: 2px solid #FF6600;
     border-radius: 10px;
     padding: 20px;
-    gap: 20px;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     /* margin-top: 130px; */
 }
 
