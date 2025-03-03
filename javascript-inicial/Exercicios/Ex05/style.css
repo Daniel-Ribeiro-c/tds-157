@@ -143,6 +143,15 @@ section {
      gap: 30px;
 }
 
+.titulo-moto{
+    color: #FFFFFF;
+}
+
+.sobre-moto{
+    color: #FFFFFF;
+   font-size: 20px ;
+}
+
 .titulo-page{
     color: #FFFFFF;
 }
