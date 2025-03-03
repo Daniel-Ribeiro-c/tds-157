@@ -25,13 +25,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#s1">História</a>
+            <a class="nav-link active" aria-current="page" href="#s3">Atuais motocicletas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#s2">Marca registrada</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#s3">Atuais motocicletas</a>
+            <a class="nav-link" href="#s1">Historia</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#s4">Contatos</a>
@@ -42,23 +42,61 @@
     </div>
   </nav>
   <main>
-    <section id="s1">
-      <div class="s1-high">
-        <div class="wrap-img">
-          <img class="img-s1" src="./Imagens/primeira.webp" alt="primeira">
-        </div>
+    <section id="s3">
+      <div class="titulo-page">
+        <h4>Potencia, Design e aventura em cada curva</h4>
       </div>
-     
-        <h2 class="title-name">História</h2>
-        <p class="texto1">A Harley-Davidson foi fundada em 1903 por Arthur Davidson e William S. Harley, que começaram
-          construindo motocicletas em uma pequena oficina de madeira,
-          com o objetivo de criar um motor potente para bicicletas. Arthur e William tiveram bastante dificuldades para
-          criar a primeira moto, pois perceberam que não era
-          tão simples implementar um motor para uma bicicleta. Mas descobriram um método para tal façanha, o motor
-          precisava ter cilindros
-          inclinados e ter mais que 400 cm³, assim era criado a Silent Gray Fellow, a primeira moto da marca.</p>
-    
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <!-- <img src="./Imagens/moto1.jpg" class="d-block w-100" alt="..." width="100vw" height="880px"> -->
+
+            <video autoplay loop muted>
+              <source src="./Imagens/videoplayback.mp4" type="video/mp4">
+            </video>
+
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Street Glide</h5>
+              <p>Street Glide 2025: Potência sem limites, tecnologia de ponta e conforto absoluto. A estrada renasce
+                aqui!</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./Imagens/moto02.jpg" class="d-block w-100" alt="slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Street bob</h5>
+              <p>Street Bob 2025: Pura potência, estilo agressivo e inovação na medida certa. A rebeldia evoluiu!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagens/moto3.jpg" class="d-block w-100" alt="slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pan America™ 1250 Special </h5>
+              <p>Pan America™ 1250 Special: Potência implacável, tecnologia avançada e prontidão para qualquer terreno.
+                A aventura nunca teve tanto poder!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
+
+
     <section id="s2">
       <div class="titulo-page">
         <h4>Marca registrada</h4>
@@ -67,98 +105,59 @@
         <h2 class="title name">V-twin</h2>
         <div class="wrap-img-card">
           <img src="./Imagens/segunda.jpg" alt="segunda">
-          <p class="texto2">
-            Uma das maiores marcas registradas da Harley-davidson certamente é o som do motor V-twin de 45 graus, algo
-            que a marca tentou patentear.
-            Suas icônicas frases de slogam também são bastantes lembradas, como
-            “live to ride, Ride to live”, que mostram como a marca é bastante associada com a cultura de rebeldia dos
-            anos 60-80 que vem com uma jaqueta de couro laranja e preto e suas motos com um design robusto e invejável.’
-          </p>
-          <audio controls loop src="./Imagens/V-Twin - 1909.mp4.mp3"></audio>
         </div>
+
+        <p class="texto2">
+          Uma das maiores marcas registradas da Harley-davidson certamente é o som do motor V-twin de 45 graus, algo
+          que a marca tentou patentear.
+          Suas icônicas frases de slogam também são bastantes lembradas, como
+          “live to ride, Ride to live”, que mostram como a marca é bastante associada com a cultura de rebeldia dos
+          anos 60-80 que vem com uma jaqueta de couro laranja e preto e suas motos com um design robusto e invejável.’
+        </p>
+        <audio controls loop src="./Imagens/V-Twin - 1909.mp4.mp3"></audio>
+
       </div>
     </section>
-    <section id="s3">
-      <div class="titulo-page">
-        <h4>Motos atuais</h4>
+
+    <section id="s1">
+      <h2 class="title-name">Silent Gray Fellow</h2>
+      <div class="s1-high">
+        <div class="wrap-img">
+          <img class="img-s1" src="./Imagens/primeira.webp" alt="primeira">
+        </div>
       </div>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./Imagens/moto1.jpg" class="d-block w-100" alt="...">
-            <div class="descri-moto">
-              <h5>STREET GLIDE</h5>
-              <p class="desc"> A Road Glide Limited é o epítome do touring luxuoso da Harley-Davidson. Com design
-                aerodinâmico, motor Milwaukee-Eight 114 (ou 117, dependendo da versão), sistema de som Boom! Box GTS,
-                banco confortável e bagageiros espaçosos, ela é feita para viagens longas com estilo e conforto. O farol
-                duplo "shark nose" e a suspensão ajustável garantem estabilidade e presença em qualquer estrada
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./Imagens/moto02.jpg" class="d-block w-100" alt="...">
-            <div class="descri-moto">
-              <h5>STREET BOB</h5>
-              <p class="desc">A Street Bob é a essência do estilo bobber da Harley-Davidson. Com design minimalista,
-                motor Milwaukee-Eight 114 (puro torque), guidão ape hanger e tanque estreito, ela oferece uma
-                experiência crua e autêntica. Ideal para quem busca atitude, personalização e aquele visual old-school
-                com desempenho moderno
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./Imagens/moto3.jpg" class="d-block w-100" alt="...">
-            <div class="descri-moto">
-              <h5>PAN AMERICA™ 1250 SPECIAL</h5>
-              <p class="desc">A Pan America 1250 Special é a aventureira premium da Harley-Davidson, projetada para
-                explorar qualquer terreno. Equipada com um motor V-Twin Revolution Max 1250 (150 cv), suspensão
-                semi-ativa, controle de altura elétrico e tecnologia avançada como tela TFT e modos de pilotagem, ela
-                combina potência, conforto e versatilidade para quem busca aventura on e off-road
-              </p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <p class="texto1">A Harley-Davidson foi fundada em 1903 por Arthur Davidson e William S. Harley, que começaram
+        construindo motocicletas em uma pequena oficina de madeira,
+        com o objetivo de criar um motor potente para bicicletas. Arthur e William tiveram bastante dificuldades para
+        criar a primeira moto, pois perceberam que não era
+        tão simples implementar um motor para uma bicicleta. Mas descobriram um método para tal façanha, o motor
+        precisava ter cilindros
+        inclinados e ter mais que 400 cm³, assim era criado a Silent Gray Fellow, a primeira moto da marca.</p>
+
+    </section>
+
+    <section id="s4">
+      <h2 class="contato">Onde adquirir uma Harley-Davidson?</h2>
+      <h2 class="fonte">Contato</h2>
+      <div class="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" placeholder="Digite seu nome" id="nome">
+        <label for="assunto">Assunto</label>
+        <input type="text" placeholder="Digite o assunto" id="assunto">
+        <br>
+        <button onclick="enviar()">Enviar</button>
       </div>
     </section>
-    <section>
-      <section id="s4">
-        <h2 class="fonte">Contato</h2>
-        <div class="formulario">
-          <label for="nome">Nome</label>
-          <input type="text" placeholder="Digite seu nome" id="nome">
-          <label for="assunto">Assunto</label>
-          <input type="text" placeholder="Digite o assunto" id="assunto">
-          <br>
-          <button onclick="enviar()">Enviar</button>
-        </div>
-      </section>
-      <footer>
-        <a target="_blank" href="https://www.instagram.com/"><img width="30px" height="auto"
-            src="./Imagens/instragran.png" alt="Instagram"></a>
-        <a target="_blank" href="https://www.facebook.com/login"><img width="30px" height="auto"
-            src="./Imagens/facebook.webp" alt="Facebook"></a>
-        <a target="_blank" href="https://x.com/"><img width="30px" height="auto" src="./Imagens/x2.webp" alt="X"></a>
-        <a target="_blank" href="https://br.linkedin.com/"><img width="30px" height="auto" src="./Imagens/linkedin.webp"
-            alt="Linkedin"></a>
-      </footer>
-    </section>
+    <footer>
+      <a target="_blank" href="https://www.instagram.com/"><img width="30px" height="auto"
+          src="./Imagens/instragran.png" alt="Instagram"></a>
+      <a target="_blank" href="https://www.facebook.com/login"><img width="30px" height="auto"
+          src="./Imagens/facebook.webp" alt="Facebook"></a>
+      <a target="_blank" href="https://x.com/"><img width="30px" height="auto" src="./Imagens/x2.webp" alt="X"></a>
+      <a target="_blank" href="https://br.linkedin.com/"><img width="30px" height="auto" src="./Imagens/linkedin.webp"
+          alt="Linkedin"></a>
+    </footer>
+
   </main>
   <script>
     function enviar() {
